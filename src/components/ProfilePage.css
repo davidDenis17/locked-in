@@ -1,0 +1,105 @@
+.profile-page {
+    padding: 20px;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+  
+  .profile-banner {
+    height: 150px;
+    background-color: #d3d3d3;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    background-color: #f5f5f5;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .uf-logo {
+    width: 50px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  
+  .profile-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .about-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+  }
+  
+  .edit-about-btn {
+    padding: 10px;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  
+  .edit-about-btn:hover {
+    background-color: #005c89;
+  }
+  
+  /* User Posts Section */
+  .user-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .post-item {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-item p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
