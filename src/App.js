@@ -21,7 +21,7 @@ function App() {
       title: "AI Engineer @ OpenAI",
       time: "1 hour ago",
       content:
-        "Exciting read! 🚀 Just came across this article on how AI is now being used to create personalized virtual dreamscapes...",
+        "Exciting read! 🚀 Just came across this article on how AI is now being used to create personalized virtual dreams capes...",
       avatar:
         "https://imgcdn.stablediffusionweb.com/2024/5/16/b58ae580-d409-447d-910a-4d90c0657778.jpg",
       image:
@@ -30,31 +30,61 @@ function App() {
       comments: 5,
       reposts: 2,
     },
-    // Other posts...
+    {
+      id: 2,
+      user: "Luca Gomez",
+      title: "Software Developer @ Google",
+      time: "5 hours ago",
+      content:
+        "Just finished a new tutorial on JavaScript async functions. Check it out!",
+      avatar:
+        "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg",
+      image:
+        "https://media.geeksforgeeks.org/wp-content/uploads/20240701150350/JavaScript-Tutorial-copy.webp",
+      likes: 8,
+      comments: 2,
+      reposts: 1,
+    },
+    {
+      id: 3,
+      user: "Alex Rodriguez",
+      title: "Data Scientist @ Amazon",
+      time: "12 hours ago",
+      content:
+        "AI is going to change the world! Here’s how machine learning models are transforming industries...",
+      avatar: "https://cdn-icons-png.flaticon.com/512/5556/5556512.png",
+      image: "",
+      likes: 15,
+      comments: 3,
+      reposts: 4,
+    },
   ]);
 
-  // About section state
+  // "About" section state (stored globally)
   const [aboutText, setAboutText] = useState(
     "Write something about yourself here..."
   );
 
-  // Function to add a new post
+  // Function to add a new user post
   const addNewPost = (newPostContent) => {
     const newPost = {
       id: posts.length + 1,
-      user: "David Denis",
+      user: "David Denis", // Current user
       title: "CS Student @ UF",
       time: "Just now",
       content: newPostContent,
       avatar:
         "https://cdn.icon-icons.com/icons2/2438/PNG/512/boy_avatar_icon_148455.png",
-      image: null,
+      image: null, // No image for user-created posts for now
       likes: 0,
       comments: 0,
       reposts: 0,
     };
-    setPosts([newPost, ...posts]);
+
+    setPosts([newPost, ...posts]); // Add the new post to the top of the posts array
   };
+
+  // Function to handle sharing a post
 
   // Function to handle sharing a post
   const handleSharePost = (postId) => {
